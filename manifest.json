@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Overtone",
+  "version": "1.0",
+
+  "description": "Adds volume controll to overcast.com",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [{
+    "matches": ["*://*.overcast.fm/*"],
+    "js": ["src/overtone.js"]
+  }]
+}
